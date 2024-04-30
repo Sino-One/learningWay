@@ -42,7 +42,7 @@ export default function SignUpForm() {
     };
 
     // Make call to backend to create user
-    const res = await fetch("http://localhost:3000/api/user/create", {
+    const res = await fetch("https://learning-way.vercel.app/api/user/create", {
       method: "POST",
       body: JSON.stringify(userData),
       headers: {
